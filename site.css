@@ -1,4 +1,30 @@
-.fancy-header {
-    color:blue;
-    text-decoration: underline;
+
+h1 {
+    color: #FFF;
+}
+h2{
+    color:#FFF;
+}
+body{
+    background-color: #66101F;
+    align-content: center;
+}
+label{
+    color:FFF;
+}
+button{
+    color:FFF;
+}
+.extra-small{
+    font-size: 10px;
+}
+.fancy-header{
+    color:red;
+    text-decoration:underline;
+}
+.extra-big{
+    font-size: 30px;
+}
+.container{
+    text-align:center;
 }
