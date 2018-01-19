@@ -1,20 +1,51 @@
-@media screen and (width-min:400)
+@media screen and(width-min:400px)
     .row{
         width:100%;
+
+    }
+    .container {
+        width:100%;
+
     }
 
-    .column-one-half{
+    * {
+        box-sizing: border-box;
+    }
+
+    .one-half{
         width:50%;
+        text-align: center;
+        float:left;
+        margin-bottom: 15px;
+        height:30px;
     }
 
-    .column-one-third{
-        width:33%;
+    .one-third{
+        width:33.33%;
+        text-align: center;
+        float:left;
+        margin-bottom: 15px;
+
+        height:30px;
     }
 
-    .column-one-forth{
+    .one-forth{
         width:25%;
+
+        text-align: center;
+        float:left;
+        margin-bottom: 15px;
+
+        height:30px;
     }
 
-    .column-one-eighth{
+    .one-eighth{
         width:12.5%;
+
+        text-align: center;
+        float:left;
+        margin-bottom: 15px;
+
+        height:30px;
     }
+
