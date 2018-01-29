@@ -195,18 +195,18 @@ var luckyNumber = Math.floor(Math.random() * 6);
 calculateTotal(luckyNumber)
 function calculateTotal(luckyNumber){
     if (luckyNumber=== 0){
-        alert ("Sorry! You did not receive a discount.")
+        alert ("Sorry... You did not receive a discount.")
     }
     else if(luckyNumber === 1){
-        alert("Congrats!You get a 10% discount!")
+        alert("Nice! You get a 10% discount!")
     }
     else if(luckyNumber === 2){
-        alert("Congrats!You receive a 25% discount.")
+        alert("Wow! You receive a 25% discount.")
     }else if(luckyNumber === 3){
-        alert("Congrats!You receive a 35% discount.")
+        alert("Cool! You receive a 35% discount.")
     }else if(luckyNumber === 4){
-        alert("Congrats!You receive a 50% discount")
+        alert("Woah! You receive a 50% discount.")
     }else {
-        alert("Congrats!You get it all for free")
+        alert("Congrats! You get it all for free!")
     }
 }
