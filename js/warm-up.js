@@ -17,7 +17,11 @@
         ==================================================================================
     */
 
+    function returnSecondChar (word) {
+        return word.charAt(1);
+    }
 
-
+        console.log(returnSecondChar("1234"));
 
 })();
+
