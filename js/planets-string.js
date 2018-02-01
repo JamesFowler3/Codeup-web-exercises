@@ -1,9 +1,9 @@
 (function(){
     "use strict";
 
-    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray = planetsString.split(',');
-    console.log(planetsArray);
+    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    // var planetsArray = planetsString.split(',');
+    // console.log(planetsArray);
 
     /**
      * TODO:
@@ -24,5 +24,15 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
+    var foods = [ "Pizza" , "Pasta" , "Fruit" , "Ice Cream" , "Cookies" , "Cake"] ;
+    console.log(foods);
 
+    foods.pop("Cake");
+    console.log(foods);
+
+    foods.unshift("Apples" , "Peaches");
+    console.log(foods);
+
+    foods.shift();
+    console.log(foods);
 })();
