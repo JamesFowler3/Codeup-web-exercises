@@ -14,6 +14,9 @@
 
         logInfo: function (doRounding) {
             // TODO: complete this method.
+                if {
+                    math.round()
+                }
 
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
