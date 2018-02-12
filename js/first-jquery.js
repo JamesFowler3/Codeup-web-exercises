@@ -1,8 +1,16 @@
 "use strict";
-// $(document).ready(function() {
-//     alert( 'The DOM has finished loading!' );
-// });
-//   $ ("li").css("font-size" , "20px");
-//   $ ("li , p , h1").css("background-color" , "yellow");
-  var alertHeading = $ ("h1").html();
-  alert(alertHeading);
+$ ("h1").click(function(){
+  $ (this).css("background-color" , "red")
+});
+
+$ ("p").dblclick(function(){
+  $ (this).css("font-size" , "18px")
+});
+
+$ ("li").hover(function (){
+  $(this).css("color" , "red")
+},
+  function() {
+  $(this).css("color" , "black")
+  }
+    );
