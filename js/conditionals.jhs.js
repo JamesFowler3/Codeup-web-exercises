@@ -191,7 +191,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
- =prompt ("What was the total of your Bill?");
+ prompt ("What was the total of your Bill?");
 calculateTotal(luckyNumber)
 function calculateTotal(luckyNumber){
     if (luckyNumber=== 0){
