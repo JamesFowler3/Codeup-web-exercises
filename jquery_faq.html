@@ -13,63 +13,50 @@
     </style>
 </head>
 <body>
-<dl>
-    <dt>How did Yellowstone get its name?</dt>
-    <dd class = "invisible">Yellowstone National Park is named after the Yellowstone River, the major river running through the park.
-        According to French-Canadian trappers in the 1800s, they asked the name of the river from the Minnetaree tribe, who live
-        in what is now eastern Montana. They responded “Mi tse a-da-zi,” which literally translates as “Rock Yellow River.”
-        The trappers translated this into French as “Roche Jaune” or “Pierre Jaune.” In 1797, explorer-geographer David Thompson
-        used the English translation—“Yellow Stone.” Lewis and Clark called the Yellowstone River by the French and English forms.
-        Subsequent use formalized the name as “Yellowstone.</dd>
-    <dt>Is Yellowstone the largest national park?</dt>
-    <dd class = "invisible">No. More than half of Alaska’s national park units are larger, including Wrangell–St. Elias National Park and Preserve,
-        which is the largest unit (13 million acres) in the National Park System. Until 1994, Yellowstone (at 2.2 million acres)
-        was the largest national park in the contiguous United States.
-        That year Death Valley National Monument was expanded and became a national park—it has more than 3 million acres.</dd>
-    <dt>Is Yellowstone the most visited national park?</dt>
-    <dd class = "invisible">Yellowstone is in the top five national parks for number of recreational visitors.
-        Great Smoky Mountains National Park often has the most.
-    </dd>
-    <dt>What is the difference between a national park and a national forest?</dt>
-    <dd class = "invisible">National parks are administered by the Department of the Interior and national forests by the Department of Agriculture.
-        The National Park Service is mandated to preserve resources unimpaired, while the Forest
-        Service is mandated to wisely manage resources for many sustainable uses. Six national forests surround Yellowstone
-        National Park.</dd>
-    <dt>How many rangers work in Yellowstone?</dt>
-    <dd class = "invisible">Approximately 773 people work for the National Park Service during the peak summer season.
-        Approximately 330 are permanent, year-round employees. Park rangers work in education, resource management,
-        law enforcement, emergency medical services, and backcountry operations. Other employees specialize in research,
-        maintenance, management, administration, trail maintenance, fire management, and fee collection.</dd>
-    <dt>How do you become a park ranger?</dt>
-    <dd class = "invisible">Many National Park Service employees begin their careers as volunteers or as seasonal employees.
-        Hiring is very competitive and is conducted through the Office of Personnel Management.
-        Learn more about working with us.</dd>
-    <dt>Can we swim in rivers and lakes?</dt>
-    <dd class = "invisible">Swimming is not recommended because most lakes and streams are dangerously cold. Firehole Canyon, near Madison Junction,
-        has a swimming area popular in summer. Soaking in thermal features is illegal. The area known as the Boiling River,
-        north of Mammoth Hot Springs, allows soaking in the Gardner River near thermal outflow, but not in the feature itself.
-        Soaking is allowed during daylight hours only and at your own risk.</dd>
-    <dt>What is the highest peak in the park?</dt>
-    <dd class = "invisible">Eagle Peak in the southeastern part of Yellowstone is the highest at 11,358 feet.</dd>
-    <dt>Why is Yellowstone called a biosphere reserve and a world heritage site?</dt>
-    <dd class = "invisible">The United Nations designated Yellowstone National Park as a biosphere reserve and a world heritage site
-        in recognition of the worldwide significance of its natural and cultural resources.</dd>
-    <dt>How did Mt. Washburn form?</dt>
-    <dd class = "invisible">At 10,243 feet, this peak can be seen from many locations in the park. It is a remnant of an extinct volcano
-        from the Absaroka Volcanics of about 50 million years ago. The volcano was literally cut in half by a volcanic
-        eruption 640,000 years ago. Only the northern part of the original volcano is still visible.</dd>
-</dl>
-<a href="#" id="toggle-invisible">Click to toggle the FAQs</a>
-<script src="/js/jquery-2.2.4.min.js"></script>
+<div id = "divId">
+    <h1>Would you like to Sign up for our newsletter?</h1>
+    <span id = "clickToHide">x</span>
+</div>
+<h3>Big Bend</h3>
+<ul id ="big-bend">
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+
+</ul>
+<h3>Rio Grande</h3>
+<ul id="state-parks-texas">
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+
+</ul>
+<h3>San Antonio Missions</h3>
+<ul id="state-parks-texas">
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+
+</ul>
+<button id = "color-change">Click me</button>
 <script>
     "use strict";
 
     $("document").ready(function() {
-        $('#toggle-invisible').click(function(event) {
-            event.preventDefault();
-            $('.invisible').toggleClass('invisible');
+        // $('').click(function () {
+        //     $("li").last().css("background-color", "yellow")
+        // });
+        // $("h3").click(function () {
+        //
+        // })
+        $('#clickToHide').click(function() {
+            $('div').hide();
         });
-    });
+    )}
 </script>
+<script src="/js/jquery-2.2.4.min.js"></script>
 </body>
 </html>
