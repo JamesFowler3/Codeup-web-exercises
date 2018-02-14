@@ -53,8 +53,14 @@
         //
         // })
         $('#clickToHide').click(function() {
-            $('div').hide();
+            $('this').parent().parent().hide();
         });
+
+        $("h3").next().hide();
+        $("h3").click(function() {
+            $("this").next().slideToggle();
+        }
+        $("").
     )}
 </script>
 <script src="/js/jquery-2.2.4.min.js"></script>
