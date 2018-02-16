@@ -5,22 +5,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather API</title>
 </head>
 <body>
+<h2>Weather Application</h2>
 <script
         src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
 <script>
     $(document).ready(function() {
-        $.get("http://api.openweathermap.org/data/2.5/weather" , {
+        $.get("http://api.openweathermap.org/data/2.5/forecast?" , {
             APPID: "ecc98b5d9237880cfdeecd804599bcbe" ,
-            q: "San Antonio"
-        }).done(function(data) {
+            q: "San Antonio" ,
+            units: "imperial" ,
+            cnt: "3"
+        }).done(function(data , ) {
             console.log(data);
         });
-    }
+
+    })
 </script>
 </body>
 </html>
