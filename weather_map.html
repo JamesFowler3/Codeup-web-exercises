@@ -6,25 +6,83 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather API</title>
+    <style>
+        #map {
+        height: 300px;
+        width: 100%; }
+    </style>
 </head>
 <body>
 <h2>Weather Application</h2>
+<div id = "insertWeather">
+
+
+
+
+</div>
+    <h4>Lat</h4>
+    <input type="text" id = "lat">
+    <h4>Lon</h4>
+    <input type = "text" id = "lon">
+
+<button type="submit">Submit</button>
+<div id = "map">
+
+</div>
 <script
         src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
 <script>
     $(document).ready(function() {
-        $.get("http://api.openweathermap.org/data/2.5/forecast?" , {
-            APPID: "ecc98b5d9237880cfdeecd804599bcbe" ,
-            q: "San Antonio" ,
-            units: "imperial" ,
-            cnt: "3"
-        }).done(function(data , ) {
-            console.log(data);
-        });
 
-    })
+
+
+        function updateWeather(lat , lon) {
+
+            $.get("http://api.openweathermap.org/data/2.5/forecast?", {
+                APPID: "ecc98b5d9237880cfdeecd804599bcbe",
+                units: "imperial",
+                cnt: "3",
+                lat: lat ,
+                lon: lon
+            }).done(function (weathers) {
+                var html = "";
+                console.log(weathers);
+                console.log(weathers.list[1].main.humidity);
+                weathers.list.forEach(function (weather) {
+                    console.log(weather.main.humidity);
+
+                    html += "<h2>" + weather.main.temp + "</h2>" + "<p>" + weather.weather[0].main + " " + weather.weather[0].description + "</p>" + "<p>" + weather.main.humidity + "</p>" + "<p>" + weather.wind.speed + "</p>" + "<p>" + weather.main.pressure + "</p>"
+
+                });
+
+
+                $("#insertWeather").html(html)
+            });
+        };
+        var lat = $("#lat").val();
+        var lon = $("#lon").val();
+        $("button").click(function () {
+            lat = $("#lat").val();
+            lon = $("#lon").val();
+            console.log(lat + " " + lon);
+            updateWeather(lat , lon)
+        })
+
+        });
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 29, lng: -37},
+            zoom: 8
+        });
+    };
+
+
+
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap"></script>
+</
 </body>
 </html>
