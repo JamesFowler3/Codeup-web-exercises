@@ -28,8 +28,8 @@ const users = [
     languages: ['html', 'css', 'javascript', 'php']
   },
     {
-      name:"James"
-      email:"JamesFowlerTX@yahoo.com"
+      name:"James",
+      email:"JamesFowlerTX@yahoo.com",
       languages: ["html" , "css" , "javascript" , "jquery"]
     }
 
