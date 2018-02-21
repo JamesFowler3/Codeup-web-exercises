@@ -30,3 +30,7 @@ const users = [
         languages: ['html', 'css', 'javascript', 'php'],
     },
 ];
+var newLanguages = users.filter(function (l) {
+    return l % 3 === 0;
+});
+console.log(newLanguages);
