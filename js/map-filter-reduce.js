@@ -47,6 +47,10 @@ const arrayToObject = (users) =>
 }, {});
 
 console.log(arrayToObject(users));
+const userObject = users.reduce((accum, user) => {
+  return accum += user.name + " ";
+
+});
 
 
 
@@ -88,10 +92,13 @@ const newName = customers.map( customer => {
         age: customer.age
     }
 });
-
+console.log(newName);
 // PROBLEM 3 - create an array of civil servant customers (teachers and police officers)
 // containing the same properties as the objects on the customers objects
-
+const newCustomers = customers.filter(function(customers) {
+    return customers.occupation !== "Librarian"
+});
+console.log(newCustomers);
 // PROBLEM 4 - determine the average age of customers
 
 //            PROBLEM 1 HINT - use .map()
