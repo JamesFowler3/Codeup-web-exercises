@@ -14,4 +14,4 @@ wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 function getDateOfLastCommit (username) {
     let dates = [];
     fetch
-}
+}ff
